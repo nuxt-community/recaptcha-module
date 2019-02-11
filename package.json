@@ -1,0 +1,60 @@
+{
+  "name": "@nuxtjs/recaptcha",
+  "version": "0.0.1",
+  "description": "Simple and easy Google reCAPTCHA integration with Nuxt.js",
+  "keywords": [
+    "nuxtjs",
+    "nuxt",
+    "recaptcha",
+    "captcha",
+    "grecaptcha"
+  ],
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "mvrlin <mvrlin@pm.me>"
+    }
+  ],
+  "main": "lib/module.js",
+  "types": "types/index.d.ts",
+  "bugs": "https://github.com/nuxt-community/recaptcha/issues",
+  "repository": "https://github.com/nuxt-community/recaptcha",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "nuxt example",
+    "lint": "eslint lib test",
+    "test": "yarn lint && jest",
+    "release": "standard-version && git push --follow-tags && npm publish"
+  },
+  "files": [
+    "lib",
+    "types/*.d.ts"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "latest",
+    "@babel/preset-env": "latest",
+    "@commitlint/cli": "latest",
+    "@commitlint/config-conventional": "latest",
+    "@nuxtjs/eslint-config": "latest",
+    "babel-eslint": "latest",
+    "babel-jest": "latest",
+    "codecov": "latest",
+    "eslint": "latest",
+    "eslint-config-standard": "latest",
+    "eslint-plugin-import": "latest",
+    "eslint-plugin-jest": "latest",
+    "eslint-plugin-node": "latest",
+    "eslint-plugin-promise": "latest",
+    "eslint-plugin-standard": "latest",
+    "eslint-plugin-vue": "latest",
+    "husky": "latest",
+    "jest": "latest",
+    "nuxt-edge": "latest",
+    "request": "latest",
+    "request-promise-native": "latest",
+    "standard-version": "latest"
+  }
+}
