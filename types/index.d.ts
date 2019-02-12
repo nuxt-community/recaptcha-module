@@ -26,6 +26,12 @@ export interface ReCaptchaInstance {
   options: ReCaptchaOptions
 
   /**
+   * Initialize Recaptcha
+   * @param action
+   */
+  init(): Promise<any>
+
+  /**
    * Returns a verify token
    * @param action
    */
