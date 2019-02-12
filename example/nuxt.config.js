@@ -13,5 +13,5 @@ module.exports = {
   srcDir: __dirname,
 
   render: { resourceHints: false },
-  rootDir: resolve(__dirname, '..'),
+  rootDir: resolve(__dirname, '..')
 }

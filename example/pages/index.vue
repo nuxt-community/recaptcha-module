@@ -4,16 +4,20 @@
 
     <form @submit.prevent="onSubmit">
       <input
+        v-model="email"
         placeholder="Email"
         type="email"
-        v-model="email">
+      >
 
       <input
+        v-model="password"
         placeholder="Password"
         type="password"
-        v-model="password">
+      >
 
-      <button type="submit">Sign In</button>
+      <button type="submit">
+        Sign In
+      </button>
     </form>
   </section>
 </template>
@@ -26,7 +30,7 @@ export default {
   }),
 
   methods: {
-    async onSubmit () {
+    async onSubmit() {
       try {
         const token = await this.$recaptcha.execute('sign-in')
 
@@ -40,7 +44,7 @@ export default {
           body: JSON.stringify({ credentials })
         })
       } catch (error) {
-        console.log('Ooops!', error)
+        console.log('Ooops!', error) // eslint-disable-line no-console
       }
     }
   }
