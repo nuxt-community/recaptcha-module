@@ -7,12 +7,14 @@
         v-model="email"
         placeholder="Email"
         type="email"
+        autocomplete="true"
       >
 
       <input
         v-model="password"
         placeholder="Password"
         type="password"
+        autocomplete="current-password"
       >
 
       <button type="submit">
@@ -25,26 +27,29 @@
 <script>
 export default {
   data: () => ({
-    email: '',
-    password: ''
+    email: 'test@example.com',
+    password: '123'
   }),
 
   methods: {
     async onSubmit() {
       try {
-        const token = await this.$recaptcha.execute('sign-in')
+        const token = await this.$recaptcha.execute('login')
 
-        const credentials = {
-          email: this.email,
-          password: this.password,
-          token
-        }
+        console.log('ReCaptcha Token:', token) // eslint-disable-line no-console
+        alert('ReCaptcha Validated!')
 
-        await fetch('https://example.com/api/sign-in', {
-          body: JSON.stringify({ credentials })
-        })
+        // const credentials = {
+        //   email: this.email,
+        //   password: this.password,
+        //   token
+        // }
+
+        // await fetch('https://example.com/api/sign-in', {
+        //   body: JSON.stringify({ credentials })
+        // })
       } catch (error) {
-        console.log('Ooops!', error) // eslint-disable-line no-console
+        console.log('Login error:', error) // eslint-disable-line no-console
       }
     }
   }
