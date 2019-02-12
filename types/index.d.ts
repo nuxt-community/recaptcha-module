@@ -26,7 +26,7 @@ export interface ReCaptchaInstance {
   options: ReCaptchaOptions
 
   /**
-   * Initialize Recaptcha
+   * Initialize ReCaptcha
    * @param action
    */
   init(): Promise<any>
