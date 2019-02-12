@@ -31,6 +31,10 @@ export default {
     password: '123'
   }),
 
+  async mounted() {
+    await this.$recaptcha.init()
+  },
+
   methods: {
     async onSubmit() {
       try {

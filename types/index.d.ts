@@ -12,13 +12,6 @@ export interface ReCaptchaOptions {
   siteKey: string
 }
 
-export interface ReCaptchaResponse {
-  /**
-   * Verification token
-   */
-  token: string
-}
-
 export interface ReCaptchaInstance {
   /**
    * Options
@@ -26,10 +19,16 @@ export interface ReCaptchaInstance {
   options: ReCaptchaOptions
 
   /**
+   * Initialize ReCaptcha
+   * @param action
+   */
+  init(): Promise<any>
+
+  /**
    * Returns a verify token
    * @param action
    */
-  execute(action: string): Promise<ReCaptchaResponse>
+  execute(action: string): Promise<string>
 }
 
 declare module 'vue/types/vue' {
