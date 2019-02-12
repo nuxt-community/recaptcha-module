@@ -6,7 +6,7 @@ module.exports = {
   modules: [
     ['@@', {
       hideBadge: true,
-      siteKey: '6Lfuro4UAAAAAEeQta_WHUy4z25f8tArT0l6wsKo'
+      siteKey: '6LeE3ZAUAAAAANVaDO60w4ZBK44khqO7OpsitZNY'
     }]
   ],
 
