@@ -31,14 +31,10 @@ export default {
     password: '123'
   }),
 
-  mounted() {
-    this.$recaptcha.homepage()
-  },
-
   methods: {
     async onSubmit() {
       try {
-        const token = await this.$recaptcha.login()
+        const token = await this.$recaptcha.execute('login')
 
         console.log('ReCaptcha Token:', token) // eslint-disable-line no-console
         alert('ReCaptcha Validated!')
