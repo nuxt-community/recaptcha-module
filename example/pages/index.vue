@@ -29,10 +29,6 @@ export default {
     password: ''
   }),
 
-  mounted() {
-    this.$recaptcha.init()
-  },
-
   methods: {
     async onSubmit() {
       try {
