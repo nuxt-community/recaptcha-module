@@ -20,7 +20,6 @@ export interface ReCaptchaInstance {
 
   /**
    * Initialize ReCaptcha
-   * @param action
    */
   init(): Promise<any>
 
