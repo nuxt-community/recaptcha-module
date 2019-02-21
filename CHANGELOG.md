@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0"></a>
+# [0.2.0](https://github.com/nuxt-community/recaptcha/compare/v0.1.0...v0.2.0) (2019-02-21)
+
+
+### Features
+
+* **example:** split example by versions ([7ae76fe](https://github.com/nuxt-community/recaptcha/commit/7ae76fe))
+* **example, lib:** add recaptcha component ([fc69668](https://github.com/nuxt-community/recaptcha/commit/fc69668))
+* **lib:** add v2 support ([07e8b62](https://github.com/nuxt-community/recaptcha/commit/07e8b62))
+* **pages:** add v2 example ([ee4cadc](https://github.com/nuxt-community/recaptcha/commit/ee4cadc))
+* **types:** add v2 types ([31e05c7](https://github.com/nuxt-community/recaptcha/commit/31e05c7))
+
+
+
 <a name="0.1.0"></a>
 # 0.1.0 (2019-02-13)
 
