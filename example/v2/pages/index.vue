@@ -17,6 +17,8 @@
         v-model="password"
       >
 
+      <recaptcha/>
+
       <button type="submit">Sign In</button>
     </form>
   </section>
