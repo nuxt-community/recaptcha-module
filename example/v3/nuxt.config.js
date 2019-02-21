@@ -4,7 +4,7 @@ module.exports = {
   buildDir: resolve(__dirname, '.nuxt'),
 
   modules: [
-    ['@@', {
+    ['../../lib/module', {
       hideBadge: true,
       siteKey: '6LeE3ZAUAAAAANVaDO60w4ZBK44khqO7OpsitZNY'
     }]
