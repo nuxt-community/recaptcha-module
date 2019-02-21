@@ -49,8 +49,9 @@ using top level options
 {
   // ...
   recaptcha: {
-    hideBadge: Boolean,    // Hide badge element
-    siteKey: String,       // Site key for requests
+    hideBadge: Boolean, // Hide badge element (v3)
+    siteKey: String,    // Site key for requests
+    version: Number,    // Version
   },
   // ...
 }
