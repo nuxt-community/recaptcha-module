@@ -6,7 +6,9 @@ module.exports = {
   modules: [
     ['../../lib/module', {
       hideBadge: true,
-      siteKey: '6LeE3ZAUAAAAANVaDO60w4ZBK44khqO7OpsitZNY'
+      siteKey: '6LeE3ZAUAAAAANVaDO60w4ZBK44khqO7OpsitZNY',
+
+      version: 3,
     }]
   ],
 
