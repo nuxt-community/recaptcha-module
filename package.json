@@ -17,8 +17,8 @@
   ],
   "main": "lib/module.js",
   "types": "types/index.d.ts",
-  "bugs": "https://github.com/nuxt-community/recaptcha/issues",
-  "repository": "https://github.com/nuxt-community/recaptcha",
+  "bugs": "https://github.com/nuxt-community/recaptcha-module/issues",
+  "repository": "https://github.com/nuxt-community/recaptcha-module",
   "publishConfig": {
     "access": "public"
   },
