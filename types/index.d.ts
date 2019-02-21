@@ -2,7 +2,7 @@ import Vue from 'vue'
 
 export interface ReCaptchaOptions {
   /**
-   * Toggles badge element visibility
+   * Toggles badge element visibility (v3)
    */
   hideBadge?: boolean
 
@@ -10,6 +10,11 @@ export interface ReCaptchaOptions {
    * Site key to send requests
    */
   siteKey: string
+
+  /**
+   * Version
+   */
+  version: number
 }
 
 export interface ReCaptchaInstance {
@@ -24,10 +29,15 @@ export interface ReCaptchaInstance {
   init(): Promise<any>
 
   /**
-   * Returns a verify token
+   * Returns a verify token (v3)
    * @param action
    */
   execute(action: string): Promise<string>
+
+  /**
+   * Returns a verify token (v2)
+   */
+  getResponse(): Promise<string>
 }
 
 declare module 'vue/types/vue' {

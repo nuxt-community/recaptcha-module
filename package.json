@@ -23,7 +23,8 @@
     "access": "public"
   },
   "scripts": {
-    "dev": "nuxt example",
+    "dev:v3": "nuxt example/v3",
+    "dev:v2": "nuxt example/v2",
     "lint": "eslint lib test",
     "test": "yarn lint && jest",
     "release": "standard-version && git push --follow-tags && npm publish"
