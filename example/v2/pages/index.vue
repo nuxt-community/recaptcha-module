@@ -31,13 +31,14 @@ export default {
     password: '123',
   }),
 
-  async mounted() {
-    await this.$recaptcha.init()
-  },
-
   methods: {
     async onSubmit() {
-      // TODO
+      try {
+        const token = await this.$recaptcha.getResponse()
+        console.log('ReCaptcha token:', token)
+      } catch (error) {
+        console.log('Login error:', error)
+      }
     },
   },
 }
