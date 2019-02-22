@@ -74,7 +74,7 @@ Copyright (c) mvrlin <mvrlin@pm.me>
 [npm-version-href]: https://npmjs.com/package/@nuxtjs/recaptcha
 [npm-downloads-src]: https://img.shields.io/npm/v/@nuxtjs/recaptcha/latest.svg?style=flat-square
 [npm-downloads-href]: https://npmjs.com/package/@nuxtjs/recaptcha
-[circle-ci-src]: https://img.shields.io/circleci/project/github/nuxt-community/recaptcha-module?style=flat-square
+[circle-ci-src]: https://img.shields.io/circleci/project/github/nuxt-community/recaptcha-module.svg?style=flat-square
 [circle-ci-href]: https://circleci.com/gh/nuxt-community/recaptcha-module
 [codecov-src]: https://img.shields.io/codecov/c/github/nuxt-community/recaptcha-module.svg?style=flat-square
 [codecov-href]: https://codecov.io/gh/@nuxtjs/recaptcha
