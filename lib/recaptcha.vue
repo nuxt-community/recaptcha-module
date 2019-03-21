@@ -1,5 +1,6 @@
 <template>
   <div
+    id="g-recaptcha"
     :data-sitekey="$recaptcha.siteKey"
     :data-size="dataSize"
     :data-theme="dataTheme"
@@ -11,6 +12,18 @@
 export default {
   mounted () {
     this.$recaptcha.init()
+  },
+
+  destroyed () {
+    try {
+      let container = document.querySelector('iframe[title="recaptcha challenge"]').parentNode.parentNode
+
+      if (container.nodeName === 'DIV') {
+        container.remove()
+      }
+    } catch (error) {
+      // fail silently
+    }
   },
 
   props: {
