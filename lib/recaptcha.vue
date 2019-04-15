@@ -3,14 +3,28 @@
     :data-sitekey="$recaptcha.siteKey"
     :data-size="dataSize"
     :data-theme="dataTheme"
+
     class="g-recaptcha"
   />
 </template>
 
 <script>
 export default {
+  methods: {
+    onError (message) {
+      return this.$emit('error', message)
+    },
+
+    onSuccess (token) {
+      return this.$emit('success', token)
+    }
+  },
+
   mounted () {
     this.$recaptcha.init()
+
+    this.$recaptcha.on('recaptcha-error', this.onError)
+    this.$recaptcha.on('recaptcha-success', this.onSuccess)
   },
 
   props: {

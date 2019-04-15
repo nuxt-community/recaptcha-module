@@ -17,7 +17,10 @@
         v-model="password"
       >
 
-      <recaptcha/>
+      <recaptcha
+        @error="onError"
+        @success="onSuccess"
+      />
 
       <button type="submit">Sign In</button>
     </form>
@@ -32,6 +35,10 @@ export default {
   }),
 
   methods: {
+    onError (error) {
+      console.log('Error happened:', error)
+    },
+
     async onSubmit() {
       try {
         const token = await this.$recaptcha.getResponse()
@@ -40,6 +47,10 @@ export default {
         console.log('Login error:', error)
       }
     },
+
+    onSuccess (token) {
+      console.log('Succeeded:', token)
+    }
   },
 }
 </script>
