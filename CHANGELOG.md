@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/nuxt-community/recaptcha-module/compare/v0.2.2...v0.3.0) (2019-04-15)
+
+
+### Features
+
+* add v2 event-bus ([366d4de](https://github.com/nuxt-community/recaptcha-module/commit/366d4de))
+
+
+
 <a name="0.2.2"></a>
 ## [0.2.2](https://github.com/nuxt-community/recaptcha-module/compare/v0.2.1...v0.2.2) (2019-02-26)
 
