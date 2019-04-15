@@ -7,7 +7,7 @@
 [![Dependencies][david-dm-src]][david-dm-href]
 [![Standard JS][standard-js-src]][standard-js-href]
 
-> Simple and easy Google reCAPTCHA integration with Nuxt.js
+> 🤖 Simple and easy Google reCAPTCHA integration with Nuxt.js
 
 [📖 **Release Notes**](./CHANGELOG.md)
 
