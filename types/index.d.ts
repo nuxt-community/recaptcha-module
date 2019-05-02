@@ -24,9 +24,9 @@ export interface ReCaptchaInstance {
   options: ReCaptchaOptions
 
   /**
-   * Initialize ReCaptcha
+   * Destroy recaptcha
    */
-  init(): Promise<any>
+  destroy(): void
 
   /**
    * Returns a verify token (v3)
@@ -38,6 +38,11 @@ export interface ReCaptchaInstance {
    * Returns a verify token (v2)
    */
   getResponse(): Promise<string>
+
+  /**
+   * Initialize ReCaptcha
+   */
+  init(): Promise<any>
 }
 
 declare module 'vue/types/vue' {

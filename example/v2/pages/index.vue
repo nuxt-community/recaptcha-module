@@ -23,6 +23,7 @@
       />
 
       <button type="submit">Sign In</button>
+      <nuxt-link :to="{ name: 'about' }">About</nuxt-link>
     </form>
   </section>
 </template>

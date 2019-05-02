@@ -10,6 +10,10 @@
 
 <script>
 export default {
+  beforeDestroy () {
+    this.$recaptcha.destroy()
+  },
+
   methods: {
     onError (message) {
       return this.$emit('error', message)
