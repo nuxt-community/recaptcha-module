@@ -24,7 +24,7 @@ export interface ReCaptchaInstance {
   options: ReCaptchaOptions
 
   /**
-   * Destroy recaptcha
+   * Destroy ReCaptcha
    */
   destroy(): void
 
