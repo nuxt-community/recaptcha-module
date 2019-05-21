@@ -20,6 +20,7 @@
       <recaptcha
         @error="onError"
         @success="onSuccess"
+        @expired="onExpired"
       />
 
       <button type="submit">Sign In</button>
@@ -51,6 +52,10 @@ export default {
 
     onSuccess (token) {
       console.log('Succeeded:', token)
+    },
+
+    onExpired () {
+      console.log('Expired')
     }
   },
 }

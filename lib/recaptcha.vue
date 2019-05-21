@@ -4,6 +4,9 @@
     :data-size="dataSize"
     :data-theme="dataTheme"
 
+    data-callback="recaptchaSuccessCallback"
+    data-expired-callback="recaptchaExpiredCallback"
+    data-error-callback="recaptchaErrorCallback"
     class="g-recaptcha"
   />
 </template>
@@ -21,6 +24,10 @@ export default {
 
     onSuccess (token) {
       return this.$emit('success', token)
+    },
+
+    onExpired () {
+      return this.$emit('expired')
     }
   },
 
@@ -29,6 +36,7 @@ export default {
 
     this.$recaptcha.on('recaptcha-error', this.onError)
     this.$recaptcha.on('recaptcha-success', this.onSuccess)
+    this.$recaptcha.on('recaptcha-expired', this.onExpired)
   },
 
   props: {
