@@ -5,7 +5,7 @@ module.exports = {
 
   modules: [
     ['../../lib/module', {
-      siteKey: '6Le-wvkSAAAAAPBMRTvw0Q4Muexq9bi0DJwx_mJ-',
+      siteKey: '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI',
       version: 2,
     }]
   ],
