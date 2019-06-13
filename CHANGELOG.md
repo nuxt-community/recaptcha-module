@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.5.0"></a>
+# [0.5.0](https://github.com/nuxt-community/recaptcha-module/compare/v0.4.1...v0.5.0) (2019-06-13)
+
+
+### Features
+
+* **v2:** add language support ([195773e](https://github.com/nuxt-community/recaptcha-module/commit/195773e))
+* **v2:** use callbacks, add expired event ([6b658b1](https://github.com/nuxt-community/recaptcha-module/commit/6b658b1))
+
+
+
 <a name="0.4.1"></a>
 ## [0.4.1](https://github.com/nuxt-community/recaptcha-module/compare/v0.4.0...v0.4.1) (2019-05-02)
 
