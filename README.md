@@ -50,8 +50,9 @@ using top level options
   // ...
   recaptcha: {
     hideBadge: Boolean, // Hide badge element (v3)
+    language: String,   // Recaptcha language (v2)
     siteKey: String,    // Site key for requests
-    version: Number,    // Version
+    version: Number     // Version
   },
   // ...
 }
