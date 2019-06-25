@@ -3,6 +3,8 @@
     :data-sitekey="$recaptcha.siteKey"
     :data-size="dataSize"
     :data-theme="dataTheme"
+    :data-badge="dataBadge"
+    :data-tabindex="dataTabindex"
 
     data-callback="recaptchaSuccessCallback"
     data-expired-callback="recaptchaExpiredCallback"
@@ -54,8 +56,22 @@ export default {
       type: String,
 
       validator: value => {
-        return ['compact', 'normal'].includes(value)
+        return ['compact', 'normal', 'invisible'].includes(value)
       }
+    },
+    
+    dataBadge: {
+      default: 'bottomright',
+      type: String,
+      
+      validator: value => {
+        return ['bottomright', 'bottomleft', 'inline'].includes(value)
+      }
+    },
+    
+    dataTabindex: {
+      default: 0,
+      type: Number
     }
   }
 }
