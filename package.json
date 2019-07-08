@@ -1,6 +1,6 @@
 {
   "name": "@nuxtjs/recaptcha",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "Simple and easy Google reCAPTCHA integration with Nuxt.js",
   "keywords": [
     "nuxtjs",
