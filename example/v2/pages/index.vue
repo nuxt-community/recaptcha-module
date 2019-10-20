@@ -45,6 +45,8 @@ export default {
       try {
         const token = await this.$recaptcha.getResponse()
         console.log('ReCaptcha token:', token)
+
+        await this.$recaptcha.reset()
       } catch (error) {
         console.log('Login error:', error)
       }
