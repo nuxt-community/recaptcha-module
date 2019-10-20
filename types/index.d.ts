@@ -43,6 +43,11 @@ export interface ReCaptchaInstance {
    * Initialize ReCaptcha
    */
   init(): Promise<any>
+
+  /**
+   * Reset ReCaptcha (v2)
+   */
+  reset(): void
 }
 
 declare module 'vue/types/vue' {
