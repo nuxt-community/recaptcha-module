@@ -6,7 +6,9 @@ module.exports = {
   modules: [
     ['../../lib/module', {
       siteKey: '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI',
-      version: 2,
+      size: 'invisible',
+      hideBadge: false,
+      version: 2
     }]
   ],
 

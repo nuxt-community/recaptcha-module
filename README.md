@@ -49,13 +49,27 @@ using top level options
 {
   // ...
   recaptcha: {
-    hideBadge: Boolean, // Hide badge element (v3)
+    hideBadge: Boolean, // Hide badge element (v3 & v2 via size=invisible)
     language: String,   // Recaptcha language (v2)
     siteKey: String,    // Site key for requests
     version: Number     // Version
+    size: String        // Size: 'compact', 'normal', 'invisible' (v2)
   },
   // ...
 }
+```
+
+## Info Hiding Badges
+
+You're allowed to hide the badge (i.e. for v3 and v2 invisible), as long as you include the recaptcha branding in the user flow.
+
+For example:
+
+```html
+<small>This site is protected by reCAPTCHA and the Google 
+    <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+    <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+</small>
 ```
 
 ## Development
