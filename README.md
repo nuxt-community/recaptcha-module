@@ -52,7 +52,7 @@ using top level options
     hideBadge: Boolean, // Hide badge element (v3 & v2 via size=invisible)
     language: String,   // Recaptcha language (v2)
     siteKey: String,    // Site key for requests
-    version: Number     // Version
+    version: Number,     // Version
     size: String        // Size: 'compact', 'normal', 'invisible' (v2)
   },
   // ...
