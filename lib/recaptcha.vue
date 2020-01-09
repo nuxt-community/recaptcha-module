@@ -1,7 +1,7 @@
 <template>
   <div
     :data-sitekey="$recaptcha.siteKey"
-    :data-size="dataSize"
+    :data-size="$recaptcha.size || dataSize"
     :data-theme="dataTheme"
     :data-badge="dataBadge"
     :data-tabindex="dataTabindex"
