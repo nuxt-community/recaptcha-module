@@ -30,7 +30,11 @@ export default {
   }),
 
   async mounted() {
-    await this.$recaptcha.init()
+    try {
+      await this.$recaptcha.init()
+    } catch (e) {
+      console.log(e);
+    }
   },
 
   methods: {
