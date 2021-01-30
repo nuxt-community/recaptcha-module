@@ -4,7 +4,6 @@
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![Circle CI][circle-ci-src]][circle-ci-href]
 [![Codecov][codecov-src]][codecov-href]
-[![Dependencies][david-dm-src]][david-dm-href]
 [![Standard JS][standard-js-src]][standard-js-href]
 
 > 🤖 Simple and easy Google reCAPTCHA integration with Nuxt.js
@@ -93,7 +92,5 @@ Copyright (c) mvrlin <mvrlin@pm.me>
 [circle-ci-href]: https://circleci.com/gh/nuxt-community/recaptcha-module
 [codecov-src]: https://img.shields.io/codecov/c/github/nuxt-community/recaptcha-module.svg?style=flat-square
 [codecov-href]: https://codecov.io/gh/@nuxtjs/recaptcha
-[david-dm-src]: https://david-dm.org/@nuxtjs/recaptcha/status.svg?style=flat-square
-[david-dm-href]: https://david-dm.org/@nuxtjs/recaptcha
 [standard-js-src]: https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square
 [standard-js-href]: https://standardjs.com
