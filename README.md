@@ -59,6 +59,18 @@ using top level options
 }
 ```
 
+## Runtime config
+```js
+{
+  publicRuntimeConfig: {
+    recaptcha: {
+      /* reCAPTCHA options */
+      siteKey: process.env.RECAPTCHA_SITE_KEY // for example
+    }
+  }
+}
+```
+
 ## Info Hiding Badges
 
 You're allowed to hide the badge (i.e. for v3 and v2 invisible), as long as you include the recaptcha branding in the user flow.
