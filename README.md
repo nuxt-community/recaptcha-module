@@ -58,6 +58,63 @@ using top level options
 }
 ```
 
+## Usage
+
+### reCAPTCHA v2
+1. Add `<recaptcha>` component iside your form:
+```vue
+<form @submit.prevent="onSubmit">
+  <input autocomplete="true" placeholder="Email" type="email" v-model="email">
+  <input autocomplete="current-password" placeholder="Password" type="password" v-model="password">
+  <recaptcha />
+  <button type="submit">Sign In</button>
+</form>
+```
+2. Call `getResponse` inside form submit handler to get reCAPTCHA token:
+```js
+async onSubmit() {
+  try {
+    const token = await this.$recaptcha.getResponse()
+    console.log('ReCaptcha token:', token)
+
+    // send token to server alongside your form data
+
+    // at the end you need to reset recaptcha
+    await this.$recaptcha.reset()
+  } catch (error) {
+    console.log('Login error:', error)
+  }
+},
+```
+See: [v2 example](https://github.com/nuxt-community/recaptcha-module/tree/master/example/v2)
+
+### reCAPTCHA v3
+1. Call `init` function inside mounted hook of your page
+```js
+async mounted() {
+  try {
+    await this.$recaptcha.init()
+  } catch (e) {
+    console.error(e);
+  }
+}
+```
+2. Call `execute` function form submit handler to get reCAPTCHA token:
+```js
+async onSubmit() {
+  try {
+    const token = await this.$recaptcha.execute('login')
+    console.log('ReCaptcha token:', token)
+
+    // send token to server alongside your form data
+
+  } catch (error) {
+    console.log('Login error:', error)
+  }
+}
+```
+See: [v3 example](https://github.com/nuxt-community/recaptcha-module/tree/master/example/v3)
+
 ## Info Hiding Badges
 
 You're allowed to hide the badge (i.e. for v3 and v2 invisible), as long as you include the recaptcha branding in the user flow.
