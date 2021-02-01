@@ -60,6 +60,7 @@ using top level options
 ```
 
 ## Runtime config
+
 ```js
 {
   publicRuntimeConfig: {
