@@ -115,6 +115,11 @@ async onSubmit() {
 ```
 See: [v3 example](https://github.com/nuxt-community/recaptcha-module/tree/master/example/v3)
 
+### Server Side
+When you send you data + token to your server, you should verify the token on the server side to make sure it does not requested from a bot.
+You can find out how to verify token on the server side by looking at the [server middleware](https://github.com/nuxt-community/recaptcha-module/tree/master/example/v2/api/recaptcha.js) inside v2 example. (The server side is same for both version)
+
+
 ## Info Hiding Badges
 
 You're allowed to hide the badge (i.e. for v3 and v2 invisible), as long as you include the recaptcha branding in the user flow.
