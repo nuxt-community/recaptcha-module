@@ -917,6 +917,11 @@
     fs-extra "^7.0.1"
     html-minifier "^3.5.21"
 
+"@nuxt/h2@latest":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@nuxt/h2/-/h2-0.2.0.tgz#63b77c21e875f9d8f06ccaafb0d7a6da62f24333"
+  integrity sha512-Ayx7Zb80rrviSCA4PKsct9S1jGkaCkKVnXdzh0nxSgKcd6oqpYMHiUMHFz+dUQk4UqkYo3wOrgSLEOQZozx05g==
+
 "@nuxt/opencollective@^0.2.1":
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/@nuxt/opencollective/-/opencollective-0.2.1.tgz#8290f1220072637e575c3935733719a78ad2d056"
@@ -6137,6 +6142,11 @@ node-fetch@^2.3.0:
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.3.0.tgz#1a1d940bbfb916a1d3e0219f037e89e71f8c5fa5"
   integrity sha512-MOd8pV3fxENbryESLgVIeaGKrdl+uaYhCSSVkjeOb/31/njTpcis5aWfdqgNlHIrKOLRbMnfPINPOML2CIFeXA==
 
+node-fetch@^2.6.1:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.1.tgz#045bd323631f76ed2e2b55573394416b639a0052"
+  integrity sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==
+
 node-int64@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/node-int64/-/node-int64-0.4.0.tgz#87a9065cdb355d3182d8f94ce11188b825c68a3b"
@@ -6384,6 +6394,13 @@ object.values@^1.0.4:
     es-abstract "^1.12.0"
     function-bind "^1.1.1"
     has "^1.0.3"
+
+ohmyfetch@latest:
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/ohmyfetch/-/ohmyfetch-0.1.6.tgz#fe137b46ee5b5598815f988315bb4254e2b5cb12"
+  integrity sha512-pUPZmTCtLdxqGefAhkdTbOVLQmbwt0wydZj21T5u+vmH3UcZ63lN0m5tJE7luHN+9deDG78XI1rFVULhzNUBww==
+  dependencies:
+    node-fetch "^2.6.1"
 
 on-finished@~2.3.0:
   version "2.3.0"

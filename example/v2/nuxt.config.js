@@ -12,6 +12,10 @@ module.exports = {
     }]
   ],
 
+  serverMiddleware: [
+    { path: '/api/check-token', handler: '~/api/recaptcha' }
+  ],
+
   srcDir: __dirname,
 
   render: { resourceHints: false },
