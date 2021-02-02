@@ -5,15 +5,11 @@ module.exports = {
 
   modules: [
     ['../../lib/module', {
-      siteKey: '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI',
-      size: 'invisible',
-      hideBadge: false,
-      version: 2
-    }]
-  ],
+      hideBadge: true,
+      siteKey: '6LeE3ZAUAAAAANVaDO60w4ZBK44khqO7OpsitZNY',
 
-  serverMiddleware: [
-    { path: '/api/check-token', handler: '~/api/recaptcha' }
+      version: 3,
+    }]
   ],
 
   srcDir: __dirname,
