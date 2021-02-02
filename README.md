@@ -61,7 +61,9 @@ using top level options
 ## Usage
 
 ### reCAPTCHA v2
+
 1. Add `<recaptcha>` component inside your form:
+
 ```vue
 <form @submit.prevent="onSubmit">
   <input autocomplete="true" placeholder="Email" type="email" v-model="email">
@@ -70,6 +72,7 @@ using top level options
   <button type="submit">Sign In</button>
 </form>
 ```
+
 2. Call `getResponse` inside form submit handler to get reCAPTCHA token:
 ```js
 async onSubmit() {
@@ -89,6 +92,7 @@ async onSubmit() {
 See: [v2 example](https://github.com/nuxt-community/recaptcha-module/tree/master/example/v2)
 
 ### reCAPTCHA v3
+
 1. Call `init` function inside `mounted` hook of your page
 ```js
 async mounted() {
@@ -99,6 +103,7 @@ async mounted() {
   }
 }
 ```
+
 2. Call `execute` function form submit handler to get reCAPTCHA token:
 ```js
 async onSubmit() {
@@ -113,7 +118,9 @@ async onSubmit() {
   }
 }
 ```
+
 See: [v3 example](https://github.com/nuxt-community/recaptcha-module/tree/master/example/v3)
+
 
 ### Server Side
 When you send `data + token` to the server, you should verify the token on the server side to make sure it does not requested from a bot.
