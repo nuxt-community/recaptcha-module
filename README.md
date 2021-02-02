@@ -61,6 +61,7 @@ using top level options
 ## Usage
 
 ### reCAPTCHA v2
+
 1. Add `<recaptcha>` component inside your form:
 ```vue
 <form @submit.prevent="onSubmit">
