@@ -61,7 +61,8 @@ using top level options
 ## Runtime config
 
 ```js
-{
+// nuxt.config.js
+export default {
   publicRuntimeConfig: {
     recaptcha: {
       /* reCAPTCHA options */
@@ -87,6 +88,7 @@ using top level options
 ```
 
 2. Call `getResponse` inside form submit handler to get reCAPTCHA token:
+
 ```js
 async onSubmit() {
   try {
@@ -107,6 +109,7 @@ See: [v2 example](https://github.com/nuxt-community/recaptcha-module/tree/master
 ### reCAPTCHA v3
 
 1. Call `init` function inside `mounted` hook of your page
+
 ```js
 async mounted() {
   try {
@@ -118,6 +121,7 @@ async mounted() {
 ```
 
 2. Call `execute` function form submit handler to get reCAPTCHA token:
+
 ```js
 async onSubmit() {
   try {
@@ -144,6 +148,7 @@ See: [v3 example](https://github.com/nuxt-community/recaptcha-module/tree/master
 
 
 ### Server Side
+
 When you send `data + token` to the server, you should verify the token on the server side to make sure it does not requested from a bot.
 You can find out how to verify token on the server side by looking at the [server middleware](https://github.com/nuxt-community/recaptcha-module/tree/master/example/v2/api/recaptcha.js) inside v2 example. (The server side is same for both versions)
 
