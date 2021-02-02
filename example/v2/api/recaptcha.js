@@ -1,8 +1,15 @@
-import { useBody } from '@nuxt/h2'
+import { useBody } from 'h3'
 import { $fetch } from 'ohmyfetch/node'
 
-const SECRET_KEY = '6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe' // Place your secret key here
+/**
+ * It is highly recommended to use enviroment variables instead of hardcoded secrets.
+ */
+const SECRET_KEY = '6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe'
 
+/**
+ * This is an example that demonstrates how verifying reCAPTCHA on the server side works.
+ * Do not use this middleware in your production.
+ */
 export default async (req, res) => {
   res.setHeader('Content-Type', 'application/json')
   try {
