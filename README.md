@@ -132,6 +132,14 @@ async onSubmit() {
 }
 ```
 
+3. Call `destroy` function inside `beforeDestroy` hook of the page. (This will remove reCAPTCHA scripts, styles and badge from the page)
+
+```js
+beforeDestroy() {
+  this.$recaptcha.destroy()
+}
+```
+
 See: [v3 example](https://github.com/nuxt-community/recaptcha-module/tree/master/example/v3)
 
 
