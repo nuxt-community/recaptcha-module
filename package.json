@@ -39,7 +39,7 @@
     "@babel/preset-env": "latest",
     "@commitlint/cli": "latest",
     "@commitlint/config-conventional": "latest",
-    "@nuxt/h2": "latest",
+    "h3": "latest",
     "@nuxtjs/eslint-config": "latest",
     "babel-eslint": "latest",
     "babel-jest": "latest",
