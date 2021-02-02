@@ -58,6 +58,19 @@ using top level options
 }
 ```
 
+## Runtime config
+
+```js
+{
+  publicRuntimeConfig: {
+    recaptcha: {
+      /* reCAPTCHA options */
+      siteKey: process.env.RECAPTCHA_SITE_KEY // for example
+    }
+  }
+}
+```
+
 ## Usage
 
 ### reCAPTCHA v2
