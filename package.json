@@ -23,6 +23,7 @@
     "access": "public"
   },
   "scripts": {
+    "dev": "nuxt example/both",
     "dev:v3": "nuxt example/v3",
     "dev:v2": "nuxt example/v2",
     "lint": "eslint lib test",

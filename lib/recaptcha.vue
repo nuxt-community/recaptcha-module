@@ -1,6 +1,6 @@
 <template>
   <div
-    :data-sitekey="$recaptcha.siteKey"
+    :data-sitekey="siteKey || $recaptcha.siteKey"
     :data-size="$recaptcha.size || dataSize"
     :data-theme="dataTheme"
     :data-badge="dataBadge"
@@ -15,38 +15,17 @@
 
 <script>
 export default {
-  beforeDestroy () {
-    this.$recaptcha.destroy()
-  },
-
-  methods: {
-    onError (message) {
-      return this.$emit('error', message)
-    },
-
-    onSuccess (token) {
-      return this.$emit('success', token)
-    },
-
-    onExpired () {
-      return this.$emit('expired')
-    }
-  },
-
-  mounted () {
-    this.$recaptcha.init()
-
-    this.$recaptcha.on('recaptcha-error', this.onError)
-    this.$recaptcha.on('recaptcha-success', this.onSuccess)
-    this.$recaptcha.on('recaptcha-expired', this.onExpired)
-  },
-
   props: {
+    siteKey: {
+      type: String,
+      default: ''
+    },
+
     dataTheme: {
       default: 'light',
       type: String,
 
-      validator: value => {
+      validator: (value) => {
         return ['dark', 'light'].includes(value)
       }
     },
@@ -55,23 +34,48 @@ export default {
       default: 'normal',
       type: String,
 
-      validator: value => {
+      validator: (value) => {
         return ['compact', 'normal', 'invisible'].includes(value)
       }
     },
-    
+
     dataBadge: {
       default: 'bottomright',
       type: String,
-      
-      validator: value => {
+
+      validator: (value) => {
         return ['bottomright', 'bottomleft', 'inline'].includes(value)
       }
     },
-    
+
     dataTabindex: {
       default: 0,
       type: Number
+    }
+  },
+  beforeDestroy() {
+    this.$recaptcha.destroy()
+  },
+
+  mounted() {
+    this.$recaptcha.init()
+
+    this.$recaptcha.on('recaptcha-error', this.onError)
+    this.$recaptcha.on('recaptcha-success', this.onSuccess)
+    this.$recaptcha.on('recaptcha-expired', this.onExpired)
+  },
+
+  methods: {
+    onError(message) {
+      return this.$emit('error', message)
+    },
+
+    onSuccess(token) {
+      return this.$emit('success', token)
+    },
+
+    onExpired() {
+      return this.$emit('expired')
     }
   }
 }
