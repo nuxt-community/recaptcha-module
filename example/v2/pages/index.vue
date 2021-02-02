@@ -44,7 +44,17 @@ export default {
     async onSubmit() {
       try {
         const token = await this.$recaptcha.getResponse()
-        console.log('ReCaptcha token:', token)
+
+        const response = await fetch('/api/check-token', {
+          method: 'POST',
+          body: JSON.stringify({
+            token,
+            email: this.email,
+            password: this.password
+          })
+        }).then(res => res.json())
+
+        console.log('Server Response: ', response)
 
         await this.$recaptcha.reset()
       } catch (error) {

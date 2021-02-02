@@ -39,6 +39,7 @@
     "@babel/preset-env": "latest",
     "@commitlint/cli": "latest",
     "@commitlint/config-conventional": "latest",
+    "h3": "latest",
     "@nuxtjs/eslint-config": "latest",
     "babel-eslint": "latest",
     "babel-jest": "latest",
@@ -54,6 +55,7 @@
     "husky": "latest",
     "jest": "latest",
     "nuxt-edge": "latest",
+    "ohmyfetch": "latest",
     "request": "latest",
     "request-promise-native": "latest",
     "standard-version": "latest"
