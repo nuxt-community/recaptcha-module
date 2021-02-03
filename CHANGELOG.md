@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/nuxt-community/recaptcha-module/compare/v0.6.2...v1.0.0) (2021-02-03)
+
+
+### Bug Fixes
+
+* describe error within execute() ([#40](https://github.com/nuxt-community/recaptcha-module/issues/40)) ([769ae67](https://github.com/nuxt-community/recaptcha-module/commit/769ae67))
+* remove badge on destroy ([#76](https://github.com/nuxt-community/recaptcha-module/issues/76)) ([c419df1](https://github.com/nuxt-community/recaptcha-module/commit/c419df1))
+
+
+### Features
+
+* runtime config ([#70](https://github.com/nuxt-community/recaptcha-module/issues/70)) ([e090317](https://github.com/nuxt-community/recaptcha-module/commit/e090317))
+* **language:** enable google auto detection ([#72](https://github.com/nuxt-community/recaptcha-module/issues/72)) ([3cb13fc](https://github.com/nuxt-community/recaptcha-module/commit/3cb13fc))
+* **multi-widget:** render and verify multiple v2 widgets ([#75](https://github.com/nuxt-community/recaptcha-module/issues/75)) ([d3e3908](https://github.com/nuxt-community/recaptcha-module/commit/d3e3908))
+
+
+
 <a name="0.6.2"></a>
 ## [0.6.2](https://github.com/nuxt-community/recaptcha-module/compare/v0.6.1...v0.6.2) (2020-01-09)
 
