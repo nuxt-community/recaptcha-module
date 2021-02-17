@@ -47,7 +47,12 @@ export interface ReCaptchaInstance {
   /**
    * Reset ReCaptcha (v2)
    */
-  reset(): void
+  reset(widgetId?: number): void
+
+  /**
+   * Render ReCaptcha (v2)
+   */
+  render(reference: string, { siteKey, theme } : { siteKey: string, theme?: string }): number
 }
 
 declare module 'vue/types/vue' {
