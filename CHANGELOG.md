@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.0.1"></a>
+## [1.0.1](https://github.com/nuxt-community/recaptcha-module/compare/v1.0.0...v1.0.1) (2021-02-17)
+
+
+### Bug Fixes
+
+* reset for multi-widget ([#78](https://github.com/nuxt-community/recaptcha-module/issues/78)) ([4ff519b](https://github.com/nuxt-community/recaptcha-module/commit/4ff519b))
+
+
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/nuxt-community/recaptcha-module/compare/v0.6.2...v1.0.0) (2021-02-03)
 
