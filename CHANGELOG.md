@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.0.4"></a>
+## [1.0.4](https://github.com/nuxt-community/recaptcha-module/compare/v1.0.3...v1.0.4) (2021-03-21)
+
+
+### Bug Fixes
+
+* dataSize default overriding actual config ([#85](https://github.com/nuxt-community/recaptcha-module/issues/85)) ([a25daf7](https://github.com/nuxt-community/recaptcha-module/commit/a25daf7))
+
+
+
 <a name="1.0.3"></a>
 ## [1.0.3](https://github.com/nuxt-community/recaptcha-module/compare/v1.0.2...v1.0.3) (2021-03-16)
 
