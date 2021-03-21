@@ -1,7 +1,7 @@
 <template>
   <div
     :data-sitekey="siteKey || $recaptcha.siteKey"
-    :data-size="dataSize || $recaptcha.size"
+    :data-size="computedDataSize"
     :data-theme="dataTheme"
     :data-badge="dataBadge"
     :data-tabindex="dataTabindex"
@@ -31,7 +31,7 @@ export default {
     },
 
     dataSize: {
-      default: 'normal',
+      default: null,
       type: String,
 
       validator: (value) => {
@@ -63,6 +63,12 @@ export default {
     this.$recaptcha.on('recaptcha-error', this.onError)
     this.$recaptcha.on('recaptcha-success', this.onSuccess)
     this.$recaptcha.on('recaptcha-expired', this.onExpired)
+  },
+
+  computed: {
+    computedDataSize() {
+      return (this.dataSize || this.$recaptcha.size) || 'normal'
+    }
   },
 
   methods: {
