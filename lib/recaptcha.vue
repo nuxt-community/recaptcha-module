@@ -60,6 +60,7 @@ export default {
   mounted() {
     this.$recaptcha.init()
 
+    this.$recaptcha.on('recaptcha-onload', this.onLoad)
     this.$recaptcha.on('recaptcha-error', this.onError)
     this.$recaptcha.on('recaptcha-success', this.onSuccess)
     this.$recaptcha.on('recaptcha-expired', this.onExpired)
@@ -72,6 +73,10 @@ export default {
   },
 
   methods: {
+    onLoad() {
+      return this.$emit('onload')
+    },
+
     onError(message) {
       return this.$emit('error', message)
     },
