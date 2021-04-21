@@ -9,12 +9,12 @@ export interface ReCaptchaOptions {
   /**
    * Site key to send requests
    */
-  siteKey: string
+  siteKey: string | [string, string]
 
   /**
    * Version
    */
-  version: number
+  version?: number
 }
 
 export interface ReCaptchaInstance {

@@ -1,16 +1,5 @@
 <template>
-  <div
-    :data-sitekey="siteKey || $recaptcha.siteKey"
-    :data-size="computedDataSize"
-    :data-theme="dataTheme"
-    :data-badge="dataBadge"
-    :data-tabindex="dataTabindex"
-
-    data-callback="recaptchaSuccessCallback"
-    data-expired-callback="recaptchaExpiredCallback"
-    data-error-callback="recaptchaErrorCallback"
-    class="g-recaptcha"
-  />
+  <div class="g-recaptcha" />
 </template>
 
 <script>
@@ -53,22 +42,30 @@ export default {
       type: Number
     }
   },
-  beforeDestroy() {
-    this.$recaptcha.destroy()
-  },
-
-  mounted() {
-    this.$recaptcha.init()
-
-    this.$recaptcha.on('recaptcha-error', this.onError)
-    this.$recaptcha.on('recaptcha-success', this.onSuccess)
-    this.$recaptcha.on('recaptcha-expired', this.onExpired)
-  },
 
   computed: {
     computedDataSize() {
       return (this.dataSize || this.$recaptcha.size) || 'normal'
     }
+  },
+  beforeDestroy() {
+    this.$recaptcha.destroy()
+  },
+
+  mounted() {
+    this.$recaptcha.init().then(() => {
+      this.$recaptcha.render(this, {
+        siteKey: this.siteKey || this.$recaptcha.siteKeyV2,
+        size: this.computedDataSize,
+        theme: this.dataTheme,
+        badge: this.dataBadge,
+        tabindex: this.dataTabindex
+      })
+    })
+
+    this.$recaptcha.on('recaptcha-error', this.onError)
+    this.$recaptcha.on('recaptcha-success', this.onSuccess)
+    this.$recaptcha.on('recaptcha-expired', this.onExpired)
   },
 
   methods: {
