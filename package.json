@@ -26,6 +26,7 @@
     "dev": "nuxt example/both",
     "dev:v3": "nuxt example/v3",
     "dev:v2": "nuxt example/v2",
+    "dev:combined": "nuxt example/combined",
     "lint": "eslint lib test",
     "test": "yarn lint && jest",
     "release": "standard-version && git push --follow-tags && npm publish"
