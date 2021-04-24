@@ -49,7 +49,9 @@ export default {
     }
   },
   beforeDestroy() {
-    this.$recaptcha.destroy()
+    this.$recaptcha.off('recaptcha-error', this.onError)
+    this.$recaptcha.off('recaptcha-success', this.onSuccess)
+    this.$recaptcha.off('recaptcha-expired', this.onExpired)
   },
 
   mounted() {
