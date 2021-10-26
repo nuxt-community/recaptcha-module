@@ -75,7 +75,7 @@ export default {
   methods: {
     validateVersion() {
       if(this.$recaptcha.version === 3) {
-        console.error('`<recaptcha />` component only required for v2')
+        console.error('<recaptcha /> component only required when using recaptcha v2')
       }
     },
 
