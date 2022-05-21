@@ -7,6 +7,11 @@ export interface ReCaptchaOptions {
   hideBadge?: boolean
 
   /**
+   * ReCaptcha mode.
+   */
+  mode?: 'base' | 'enterprise'
+
+  /**
    * Site key to send requests
    */
   siteKey: string

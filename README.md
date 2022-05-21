@@ -50,8 +50,9 @@ using top level options
   recaptcha: {
     hideBadge: Boolean, // Hide badge element (v3 & v2 via size=invisible)
     language: String,   // Recaptcha language (v2)
+    mode: String,       // Mode: 'base', 'enterprise'
     siteKey: String,    // Site key for requests
-    version: Number,     // Version
+    version: Number,    // Version
     size: String        // Size: 'compact', 'normal', 'invisible' (v2)
   },
   // ...
@@ -160,7 +161,7 @@ You're allowed to hide the badge (i.e. for v3 and v2 invisible), as long as you 
 For example:
 
 ```html
-<small>This site is protected by reCAPTCHA and the Google 
+<small>This site is protected by reCAPTCHA and the Google
     <a href="https://policies.google.com/privacy">Privacy Policy</a> and
     <a href="https://policies.google.com/terms">Terms of Service</a> apply.
 </small>

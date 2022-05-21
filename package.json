@@ -23,9 +23,12 @@
     "access": "public"
   },
   "scripts": {
-    "dev": "nuxt example/both",
-    "dev:v3": "nuxt example/v3",
-    "dev:v2": "nuxt example/v2",
+    "dev": "nuxt example/base/both",
+    "dev:v3": "nuxt example/base/v3",
+    "dev:v2": "nuxt example/base/v2",
+    "dev:enterprise": "nuxt example/enterprise/both",
+    "dev:enterprise:v3": "nuxt example/enterprise/v3",
+    "dev:enterprise:v2": "nuxt example/enterprise/v2",
     "lint": "eslint lib test",
     "test": "yarn lint && jest",
     "release": "standard-version && git push --follow-tags && npm publish"

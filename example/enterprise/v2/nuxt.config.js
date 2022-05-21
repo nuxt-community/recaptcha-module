@@ -4,8 +4,9 @@ module.exports = {
   buildDir: resolve(__dirname, '.nuxt'),
 
   modules: [
-    ['../../lib/module', {
-      siteKey: '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI',
+    ['../../../lib/module', {
+      mode: 'enterprise',
+      siteKey: process.env.RECATPCHA_KEY,
       size: 'invisible',
       hideBadge: false,
       version: 2
