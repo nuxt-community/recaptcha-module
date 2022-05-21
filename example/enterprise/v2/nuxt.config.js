@@ -6,7 +6,7 @@ module.exports = {
   modules: [
     ['../../../lib/module', {
       mode: 'enterprise',
-      siteKey: process.env.RECATPCHA_KEY,
+      siteKey: process.env.RECAPTCHA_SITE_KEY,
       size: 'invisible',
       hideBadge: false,
       version: 2
