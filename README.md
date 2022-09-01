@@ -105,7 +105,9 @@ async onSubmit() {
   }
 },
 ```
-See: [v2 example](https://github.com/nuxt-community/recaptcha-module/tree/master/example/v2)
+See:
+- [v2 example (base)](https://github.com/nuxt-community/recaptcha-module/tree/master/example/base/v2)
+- [v2 example (enterprise)](https://github.com/nuxt-community/recaptcha-module/tree/master/example/enterprise/v2)
 
 ### reCAPTCHA v3
 
@@ -145,13 +147,15 @@ beforeDestroy() {
 }
 ```
 
-See: [v3 example](https://github.com/nuxt-community/recaptcha-module/tree/master/example/v3)
+See:
+- [v3 example (base)](https://github.com/nuxt-community/recaptcha-module/tree/master/example/base/v3)
+- [v3 example (enterprise)](https://github.com/nuxt-community/recaptcha-module/tree/master/example/enterprise/v3)
 
 
 ### Server Side
 
 When you send `data + token` to the server, you should verify the token on the server side to make sure it does not requested from a bot.
-You can find out how to verify token on the server side by looking at the [server middleware](https://github.com/nuxt-community/recaptcha-module/tree/master/example/v2/api/recaptcha.js) inside v2 example. (The server side is same for both versions)
+You can find out how to verify token on the server side by looking at the [server middleware](https://github.com/nuxt-community/recaptcha-module/blob/master/example/base/v2/api/recaptcha.js) inside v2 example. (The server side is same for both versions)
 
 
 ## Info Hiding Badges
