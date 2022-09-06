@@ -73,6 +73,12 @@ export default {
 }
 ```
 
+## Generate reCAPTCHA Site Keys
+
+You can generate keys for the `basic` mode [by registering a new site](https://www.google.com/recaptcha/admin/create).
+
+For the `enterprise` mode, [use the Google Cloud Console](https://console.cloud.google.com/security/recaptcha).
+
 ## Usage
 
 ### reCAPTCHA v2
