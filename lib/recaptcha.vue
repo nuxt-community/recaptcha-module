@@ -59,6 +59,7 @@ export default {
 
   mounted() {
     this.$recaptcha.init()
+    this.validateVersion();
 
     this.$recaptcha.on('recaptcha-error', this.onError)
     this.$recaptcha.on('recaptcha-success', this.onSuccess)
@@ -72,6 +73,12 @@ export default {
   },
 
   methods: {
+    validateVersion() {
+      if(this.$recaptcha.version === 3) {
+        console.error('<recaptcha /> component only required when using recaptcha v2')
+      }
+    },
+
     onError(message) {
       return this.$emit('error', message)
     },
