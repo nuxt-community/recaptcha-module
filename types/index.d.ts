@@ -52,7 +52,7 @@ export interface ReCaptchaInstance {
   /**
    * Returns a verify token (v2)
    */
-  getResponse(): Promise<string>
+  getResponse(widgetId?: number): Promise<string>
 
   /**
    * Initialize ReCaptcha
@@ -67,7 +67,7 @@ export interface ReCaptchaInstance {
   /**
    * Render ReCaptcha (v2)
    */
-  render(reference: string, { siteKey, theme } : { siteKey: string, theme?: string }): number
+  render(reference: string, { sitekey, theme } : { sitekey: string, theme?: string }): number
 }
 
 declare module 'vue/types/vue' {
