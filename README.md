@@ -115,6 +115,8 @@ See:
 - [v2 example (base)](https://github.com/nuxt-community/recaptcha-module/tree/master/example/base/v2)
 - [v2 example (enterprise)](https://github.com/nuxt-community/recaptcha-module/tree/master/example/enterprise/v2)
 
+
+
 ### reCAPTCHA v3
 
 1. Call `init` function inside `mounted` hook of your page
@@ -156,6 +158,38 @@ beforeDestroy() {
 See:
 - [v3 example (base)](https://github.com/nuxt-community/recaptcha-module/tree/master/example/base/v3)
 - [v3 example (enterprise)](https://github.com/nuxt-community/recaptcha-module/tree/master/example/enterprise/v3)
+
+### Handling success, expire and error Events on Recaptcha component 
+
+in your vue component where the `<recapcha />` is included you can bind events ` @success, @expires and @error ` to trigger  when the recaptcha is either validate successfully, timedout or triggers an error. Hence, 
+
+```vue
+<form @submit.prevent="onSubmit">
+  <input autocomplete="true" placeholder="Email" type="email" v-model="email">
+  <input autocomplete="current-password" placeholder="Password" type="password" v-model="password">
+  <recaptcha @success="onSuccess" @expired="onExpires" @error="onError" />
+  <button type="submit">Sign In</button>
+</form>
+```
+
+in your vue script inside the methods
+```js
+async onSuccess(token){
+  console.log("recaptcha validates successfully with token")
+}
+
+async onExpires(){
+  console.log("recaptcha validation expires")
+}
+
+async onError(message){
+  console.log("recaptcha error with message " + message)
+}
+```
+
+note: the onExpires method does not take any parameter
+
+See: [v2 example](https://github.com/nuxt-community/recaptcha-module/blob/master/example/v2/pages/index.vue)
 
 
 ### Server Side
