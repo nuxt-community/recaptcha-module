@@ -48,12 +48,13 @@ using top level options
 {
   // ...
   recaptcha: {
-    hideBadge: Boolean, // Hide badge element (v3 & v2 via size=invisible)
-    language: String,   // Recaptcha language (v2)
-    mode: String,       // Mode: 'base', 'enterprise'
-    siteKey: String,    // Site key for requests
-    version: Number,    // Version
-    size: String        // Size: 'compact', 'normal', 'invisible' (v2)
+    hideBadge: Boolean,       // Hide badge element (v3 & v2 via size=invisible)
+    language: String,         // Recaptcha language (v2)
+    onloadCallback: Function, // Fonction de rappel à exécuter lorsque reCAPTCHA est complètement chargé
+    mode: String,             // Mode: 'base', 'enterprise'
+    siteKey: String,          // Site key for requests
+    version: Number,          // Version
+    size: String              // Size: 'compact', 'normal', 'invisible' (v2)
   },
   // ...
 }
