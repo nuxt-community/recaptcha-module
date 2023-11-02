@@ -12,6 +12,11 @@ export interface ReCaptchaOptions {
   language?: string
 
   /**
+   * Callback executed when ReCaptcha fully loads
+   */
+  onloadCallback?: Function;
+
+  /**
    * ReCaptcha mode.
    */
   mode?: 'base' | 'enterprise'

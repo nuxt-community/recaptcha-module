@@ -21,6 +21,7 @@
         @error="onError"
         @success="onSuccess"
         @expired="onExpired"
+        @load="onLoad"
       />
 
       <button type="submit">Sign In</button>
@@ -68,6 +69,10 @@ export default {
 
     onExpired () {
       console.log('Expired')
+    },
+
+    onLoad () {
+      console.log('Loaded')
     }
   },
 }

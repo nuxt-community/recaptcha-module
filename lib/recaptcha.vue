@@ -9,6 +9,7 @@
     data-callback="recaptchaSuccessCallback"
     data-expired-callback="recaptchaExpiredCallback"
     data-error-callback="recaptchaErrorCallback"
+    data-onload-callback="recaptchaOnloadCallback"
     class="g-recaptcha"
   />
 </template>
@@ -63,6 +64,7 @@ export default {
     this.$recaptcha.on('recaptcha-error', this.onError)
     this.$recaptcha.on('recaptcha-success', this.onSuccess)
     this.$recaptcha.on('recaptcha-expired', this.onExpired)
+    this.$recaptcha.on('recaptcha-onload', this.onLoad)
   },
 
   computed: {
@@ -82,6 +84,10 @@ export default {
 
     onExpired() {
       return this.$emit('expired')
+    }
+
+    onLoad() {
+      return this.$emit('load')
     }
   }
 }
