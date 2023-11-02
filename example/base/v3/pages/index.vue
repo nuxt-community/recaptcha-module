@@ -32,6 +32,7 @@ export default {
   async mounted() {
     try {
       await this.$recaptcha.init()
+      this.$recaptcha.on('load', this.onLoadCallback)
     } catch (e) {
       console.log(e);
     }
