@@ -1,3 +1,6 @@
+> [!NOTE]
+> This repository is archived. `@nuxtjs/recaptcha` was built for Nuxt 2, which reached end of life on June 30, 2024.
+
 # Google reCAPTCHA
 
 [![npm version][npm-version-src]][npm-version-href]
